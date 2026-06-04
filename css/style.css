@@ -1,6 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Syne:wght@400..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root{
+    --gold:#8B7355;
+    --dark:#1A1A1A;
+    --parafont:syne;
+    --headfont:Sansita;
+    --infocolor:#666666;
+}
 *{
     margin:0;
     padding:0;
@@ -10,6 +19,7 @@
 }
 .mainbackground{
     background-color: #fff8ed;
+    
 }
 .navbar{
     background-color: aqua;
@@ -161,3 +171,116 @@ font-weight: 700;
 .navside.active{
     display:flex;
 }
+/* main section */
+.hero{
+/* background-color: aquamarine; */
+min-height: 85vh;
+width: 100%;
+display: flex;
+gap:8%;
+font-size: 1rem;
+}
+.maininfo{
+    /* background-color: aliceblue; */
+    height: 100%;
+    width: 55%;
+    font-size: 16px;
+}
+.image{
+  
+    height: 95%;
+    width: 45%;
+    margin:auto;
+   
+    background-color:#e8e2da;
+    border-radius:50%;
+    overflow:hidden;
+}
+
+.name{
+    /* background-color: brown; */
+height: 24rem;
+   font-size: clamp(3rem, 8vw, 9rem);
+padding: 30px 60px;
+font-family: var(--parafont);
+font-weight: 700;
+}
+.biodiv{
+/* background-color: cadetblue; */
+height: 9rem;
+font-size: 16px;
+display: flex;
+align-items: center;
+
+
+}
+.biodiv p{
+font-size: 1.3em;
+max-width:50ch;
+line-height: 1.6;
+margin-left:3em;
+font-family: var(--parafont);
+color: var(--infocolor);
+}
+.cvdiv{
+/* background-color: chartreuse; */
+height: 4.8rem;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+
+}
+.cvdiv button{
+    background-color: #000000;
+    height: 60px;
+    width: 40%;
+    border-radius: 20px;
+    font-size: 1.3em;
+    font-family: var(--parafont);
+    color: var(--infocolor);
+    border: 1.3px solid var(--infocolor);
+    
+}
+
+.cvdiv2{
+    height: 90%;
+     width:85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.name{
+    opacity: 1;
+    transform: translateY(100px);
+
+    animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideUp{
+
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.mainimage{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.mainimage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+     border-radius: 50%; 
+}
+
+
