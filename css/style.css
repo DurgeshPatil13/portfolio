@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Syne:wght@400..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Syne:wght@400..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 :root{
     --gold:#8B7355;
     --dark:#1A1A1A;
@@ -10,6 +12,10 @@
     --headfont:Sansita;
     --infocolor:#666666;
     --darkgold:#f7d2a6;
+    --project1:#E8E4DD;
+    --project2:#DDD8D0;
+    --project3:#D4CFC8;
+    --secfont:Bricolage Grotesque ;
 }
 *{
     margin:0;
@@ -318,10 +324,10 @@ justify-content: space-evenly;
 
 .ticker-item {
   flex-shrink: 0;
-  color: var(--darkgold); /* cream color with 80% opacity */
+  color: var(--darkgold); 
   font-family: var(--parafont);
   font-weight: 500;
-  font-size: 0.875rem; /* 14px */
+  font-size: 0.875rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -333,4 +339,222 @@ justify-content: space-evenly;
   100% {
     transform: translateX(-50%);
   }
+}
+.work{
+    background-color: #fff8ed;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.projectdiv h1{
+font-size: clamp(2.5rem, 5vw, 5rem);
+ padding:1rem; 
+font-family: Bricolage Grotesque ;
+margin-left:  auto;
+
+}
+.progrid{
+    /* background-color: aqua; */
+    height: 80%;
+    width: 80%;
+    display: grid;
+grid-template-columns: 1fr 1fr;
+justify-content: center;
+/* align-content: center; */
+/* padding:3rem 12rem; */
+ gap: 1.5em;
+ margin: 0 auto;
+ 
+}
+.probox{
+  
+border-radius: 20px;
+border: 1px dashed rgba(88, 88, 88, 0.458);
+}
+.pro1{
+    width: auto;
+    height: auto;
+    background-color: var(--project1);
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.pro1:hover{
+    background-color:#d5d1c9 ;
+
+}
+.pro2{
+    width: auto;
+    height: auto;
+    background-color: var(--project2);
+    position: relative;
+     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.pro2:hover{
+    background-color:#e6ddd1 ;
+
+}
+.pro3{
+    width: auto;
+    height: auto;
+    background-color: var(--project3);
+      position: relative;
+       cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.pro3:hover{
+    background-color:rgb(221, 213, 199) ;
+
+}
+.pro4{
+    width: auto;
+    height: auto;
+    background-color: var(--project1);
+      position: relative;
+       cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.pro4:hover{
+    background-color:#d5d1c9 ;
+
+}
+@media (max-width:900px) {
+    .progrid{
+        grid-template-columns: 1fr;
+        gap:1em;
+        height: 90%;
+        width: 90%;
+    }
+}
+.prostack{
+    display: flex;
+    align-items: center;
+
+}
+.prostack {
+    font-size: 1em;
+    /* background-color: brown; */
+     padding: 0.5em; 
+border-radius: 20px;
+background-color:rgba(237, 234, 228, 0.7);
+font-family: var(--secfont);
+color: #323232;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+margin-left: 0.5em;
+
+}
+.mainbox{
+    /* background-color: aquamarine; */
+    display: flex;
+align-items: baseline;
+justify-content: space-between;
+   /* padding: 1em; */
+   
+}
+.viewbtn{
+  height: 4em;
+  width: 4em;
+border-radius: 50%;
+    /* background-color: #DDD8D0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.viewbtn i {
+ background-color: black;
+ border-radius: 50%;
+ color: rgba(255, 247, 233, 0.877);
+    text-align: center;
+    font-size: 2em;
+    height: auto;
+    width: auto;
+    font-size: 2.5em;
+    transition: transform 0.3s ease;
+}
+.viewbtn i:hover{
+transform: scale(1.2);
+}
+.proname{
+    position: absolute;
+    bottom: 5%;
+    left: 4%;
+    font-size: 1.6rem;
+    font-family: var(--secfont);
+}
+.proname p{
+    font-size: 1rem;
+    font-family: var(--parafont);
+}
+.about{
+    background-color: #fff8ed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.outerdiv{
+    background-color:#1a1917;
+    height: 70%;
+    width: 80%;
+    border-radius: 20px;
+    border: 1px solid rgb(114, 114, 114);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.educontainer{
+    height: 100%;
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+.skillscontainer{
+    height: 100%;
+  width: 100%;
+    background-color: rgb(9, 144, 99);
+}
+.aboutdiv{
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;
+    /* background-color: brown; */
+}
+.aboutdiv h3{
+font-size: 2em;
+text-decoration: underline;
+text-underline-offset: 14px;
+color: #D4B483;
+font-family: var(--secfont);
+}
+.aboutdiv p{
+font-size: 1.2em;
+line-height: 1.5em;
+color: var(--infocolor);
+font-family: var(--parafont);
+}
+.edudiv{
+    height: 55%;
+  
+display: flex;
+flex-direction: column;
+gap: 1.5em;
+padding: 2em;
+}
+.edudiv h3{
+font-size: 2em;
+font-family: var(--secfont);
+color: #D4B483;
+display: flex;
+align-items: center;
+gap: 14px;
+}
+.edudiv p{
+font-size: 1.1em;
+line-height: 0.7em;
+color: var(--infocolor);
+font-family: var(--parafont);
 }
