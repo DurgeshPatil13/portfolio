@@ -11,7 +11,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Devicons for tech stack logos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+            <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+            
+<!-- Devicons for tech stack logos -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 <script src="js/main.js" defer></script>
   <link rel="stylesheet" href="css/style.css" />
@@ -29,33 +33,31 @@
     </div>
 
     <ul class="nav-items">
-        <li><a href="">Home</a></li>
-        <li><a href="">Work</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#worksection">Work</a></li>
+        <li><a href="#abtsection">About</a></li>
+        <li><a href="#contactsec">Contact</a></li>
     </ul>
 
 
 <!-- lets talk button -->
  <div class="talk-btn">
-  <a href="">Let's Talk</a>
+ <i class="fa-regular fa-moon"></i>
  </div>
 
   </nav>
     <ul class="navside">
-        <li><a href="">Home</a></li>
-        <li><a href="">Work</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#worksection">Work</a></li>
+        <li><a href="#abtsection">About</a></li>
+        <li><a href="#contactsec">Contact</a></li>
             <div class="close">
     ✕
 </div>
     </ul>
 
-
-
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" id="home">
     <!-- leftinfo -->
     <div class="maininfo">
 <!-- name div -->
@@ -71,8 +73,8 @@
   <!-- button div -->
    <div class="cvdiv">
     <div class="cvdiv2">
-    <button type="button" style="color: #E8E4DD;">See my Work</button>
-    <button type="button" style="background-color: #E8E4DD;">Download CV</button>
+    <button class="work" type="button" style="color: #E8E4DD;">See my Work</button>
+    <button class="cvbtn" type="button" style="background-color: #E8E4DD;">Download CV</button>
 </div>
    </div>
     </div>
@@ -133,7 +135,7 @@
 </div>
 
   <!-- WORK -->
-  <section class="work">
+  <section class="work" id="worksection">
     <!-- project headings -->
     <div class="projectdiv">
 
@@ -225,7 +227,7 @@ React · API
   </section>
 
   <!-- ABOUT -->
-  <section class="about">
+  <section class="about" id="abtsection">
     <!-- the bigger outer black div -->
      <div class="outerdiv">
 <!-- the left education div/section -->
@@ -245,18 +247,165 @@ React · API
  </div>
  <!-- the right skills div/section -->
   <div class="skillscontainer">
+<!-- tech stack heading -->
+ <div class="techheading">
+Tech Stack
+ </div>
+ <!-- the tech stack grid div -->
+  <div class="techgrid1">
+<!-- tech elements -->
+ <div class="html techgrid">
+<!-- photo -->
+ <div class="htmlphoto htmllogo">
+<i class="fa-brands fa-html5"></i>
+ </div>
+ <h4 class="htmlheading">
+HTML5
+ </h4>
+ </div>
+  <div class="css techgrid">
+ <div class="htmlphoto csslogo">
+<i class="fa-brands fa-css3-alt"></i>
+ </div>
+ <h4 class="htmlheading">
+CSS3
+ </h4>
+ </div>
+  <div class="js techgrid">
+ <div class="htmlphoto javascript">
+<i class="fa-brands fa-js"></i>
+ </div>
+ <h4 class="htmlheading">
+JavaScript
+ </h4>
+ </div>
+  <div class="tailwind techgrid">
+ <div class="htmlphoto tail">
+<i class="devicon-tailwindcss-plain-wordmark"></i>
+ </div>
+ <h4 class="htmlheading">
+Tailwind
+ </h4>
+ </div>
+  <div class="react techgrid">
+ <div class="htmlphoto react">
+<i class="fa-brands fa-react"></i>
+ </div>
+ <h4 class="htmlheading">
+React
+ </h4>
+ </div>
+  <div class="nodejs techgrid">
+ <div class="htmlphoto node">
+<i class="fa-brands fa-node-js"></i>
+ </div>
+ <h4 class="htmlheading">
+nodejs
+ </h4>
+ </div>
+  <div class="mogodb techgrid">
+ <div class="htmlphoto ts">
 
+            <i class="devicon-typescript-plain"></i>
+          
+ </div>
+ <h4 class="htmlheading">
+TypeScript
+ </h4>
+ </div>
+  <div class="github techgrid">
+ <div class="htmlphoto mongo">
+
+            <i class="devicon-mongodb-plain"></i>
+          
+ </div>
+ <h4 class="htmlheading">
+MongoDB
+ </h4>
+ </div>
+  </div>
   </div>
      </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="contact">
+  <section class="contact" id="contactsec">
+    <!-- get in touch -->
+     <div class="getintouch">
+<h3>
+  Get in touch
+</h3>
+
+<!-- the 3 contact div container -->
+ <div class="contactdiv">
+  <!-- 1st contact -->
+<div class="email common">
+<div class="emailicon">
+<i class="fa-regular fa-envelope"></i>
+</div>
+<div class="emailinfo">
+<p class="email1">Email me</p>
+<p class="email2">youremail@.com</p>
+</div>
+</div>
+<!-- 2nd contact -->
+ <div class="git common">
+<div class="emailicon">
+<i class="fa-brands fa-github"></i>
+</div>
+<div class="emailinfo">
+<p class="email1">Github</p>
+<p class="email2">github.com/DurgeshPatil13</p>
+</div>
+</div>
+ <div class="linkdin common">
+<div class="emailicon">
+<i class="fa-brands fa-linkedin"></i>
+</div>
+<div class="emailinfo">
+<p class="email1">LinkdIn</p>
+<p class="email2">linkdin.com/</p>
+</div>
+</div>
+  </div>
+ </div>
+
+     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-  </footer>
+  <div class="footer-content">
+
+    <h2>Durgesh Patil</h2>
+    <p class="role">Full Stack Developer</p>
+
+    <div class="footer-socials">
+      <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+      <a href="#"><i class="fa-regular fa-envelope"></i> Email</a>
+    </div>
+
+    <hr>
+
+    <ul class="footer-nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <p class="copyright">
+      © 2026 Durgesh Patil. All rights reserved.
+    </p>
+
+    <a href="#top" class="top-btn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+  </div>
+</footer>
 
   <script src="script.js"></script>
 </body>
