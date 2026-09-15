@@ -15,7 +15,7 @@ navLinks.forEach(link => {
     link.addEventListener("click", () => {
         navside.classList.remove("active");
     });
-});
+})
 const workbtn=document.querySelector(".work");
 const cvbtn=document.querySelector(".cvbtn");
 workbtn.addEventListener("click",()=>{
@@ -29,9 +29,9 @@ const icon = div.querySelector("i");
 div.addEventListener("click", () => {
     icon.classList.toggle("fa-moon");
     icon.classList.toggle("fa-sun");
-});
+})
 
 
 div.addEventListener("click", () => {
     document.body.classList.toggle("dark");
-});
+})
